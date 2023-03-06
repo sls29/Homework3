@@ -1,15 +1,11 @@
 package treeset;
 
 public class HobbyAddress {
-    String streetName;
-    int zipCode;
-    String town;
+    String county;
     String country;
 
-    public HobbyAddress(String streetName, int zipCode, String town, String country){
-        this.streetName = streetName;
-        this.zipCode = zipCode;
-        this.town = town;
+    public HobbyAddress(String county, String country) {
+        this.county = county;
         this.country = country;
     }
 }
