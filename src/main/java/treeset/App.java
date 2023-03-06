@@ -1,10 +1,12 @@
 package treeset;
 
 
+import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.TreeSet;
+import java.util.*;
 
 public class App
 {
@@ -15,7 +17,7 @@ public class App
 
         Persons.add(new Person(1, "Junior", 16));
         Persons.add(new Person(2, "Mister", 36));
-        Persons.add(new Person( 3, "Senior", 61));
+        Persons.add(new Person(3, "Senior", 61));
 
         for(Person person : Persons){
             System.out.println(person);
@@ -31,8 +33,12 @@ public class App
         Hobbies.add(new Hobby("swim", 7, "Devon", "Great Britan"));
 
 
+        int size = Hobbies.size();
+        System.out.println(size);
 
-        //HashMap<Person, List<Hobby>> map = new HashMap<>();
+        HashMap<Person, List<Hobby>> map = new HashMap<>();
+
+        //map.put(Person.)
 
     }
 }
