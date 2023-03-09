@@ -8,4 +8,8 @@ public class HobbyAddress {
         this.county = county;
         this.country = country;
     }
+
+    public String toString() {
+        return ": " + this.county + ", " + this.country + ".";
+    }
 }

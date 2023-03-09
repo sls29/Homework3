@@ -1,19 +1,23 @@
 package treeset;
 
 public class Person {
-
-    int id;
     String firstName;
     int age;
 
-    public Person(int id, String firstName, int age){
-        this.id = id;
+    public Person(String firstName, int age){
         this.firstName = firstName;
         this.age = age;
     }
 
+    public String getName() {
+        return this.firstName;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
     public String toString(){
-        return " " + this.id + ". " +this.firstName + " - " + this.age;
+        return " " + this.firstName + " - " + this.age;
     }
 
 }
