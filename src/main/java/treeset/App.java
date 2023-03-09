@@ -25,17 +25,18 @@ public class App {
         System.out.println(Persons);
         System.out.println("------------------------------------------");
 
-        Iterator iterator = Persons.iterator();
+        Iterator<Person> iterator = Persons.iterator();
 
         System.out.println("Treeset data");
         while(iterator.hasNext()) {
-            System.out.println(iterator.next() + " ");
+            final Person nextPerson = iterator.next();
+            System.out.println(nextPerson.firstName + ", " + nextPerson.age);
         }
 
-        //        for(Person person : Persons){
-//            System.out.println(person);
+        // for(Person person : Persons){
+        //    System.out.println(person);
+        // }
 
-        List<Hobby> Hobbies = new LinkedList<Hobby>();
 
         Hobby hobby1 = new Hobby("ski", 3, "Brasov", "Romania");
         Hobby hobby2 = new Hobby("ski", 3, "Bavaria", "Germany");
@@ -43,6 +44,8 @@ public class App {
         Hobby hobby4 = new Hobby("trekking", 5, "Trentino", "Italy");
         Hobby hobby5 = new Hobby("swim", 7, "Normandy", "France");
         Hobby hobby6 = new Hobby("swim", 7, "Devon", "Great Britan");
+
+        List<Hobby> Hobbies = new LinkedList<Hobby>();
 
         Hobbies.add(hobby1);
         Hobbies.add(hobby2);
@@ -52,11 +55,14 @@ public class App {
         Hobbies.add(hobby6);
 
         System.out.println(" ");
-        System.out.println(hobby1.Location());
-        System.out.println(hobby3.Location());
-        System.out.println(hobby5.Location());
+        System.out.println(hobby2.Location());
+        System.out.println(hobby4.Location());
+        System.out.println(hobby6.Location());
 
         Map<Person, Hobby> map = new HashMap<>();
+
+        System.out.println("");
+        System.out.println(map);
 
         map.put(Person1, hobby1);
         map.put(Person2, hobby3);
@@ -65,8 +71,5 @@ public class App {
         System.out.println("");
         System.out.println(map);
 
-        for(Person i : map.keySet()){
-            System.out.println("key: " + i.getAge() );
-        }
     }
 }
