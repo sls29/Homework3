@@ -17,7 +17,7 @@ public class Person {
         return this.age;
     }
     public String toString(){
-        return " " + this.firstName + " - " + this.age;
+        return " " + this.firstName + " is " + this.age + " old ";
     }
 
 }

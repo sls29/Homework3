@@ -40,8 +40,8 @@ public class App {
 
         Hobby hobby1 = new Hobby("ski", 3, "Brasov", "Romania");
         Hobby hobby2 = new Hobby("ski", 3, "Bavaria", "Germany");
-        Hobby hobby3 = new Hobby("trekking", 5, "Cluj", "Romania");
-        Hobby hobby4 = new Hobby("trekking", 5, "Trentino", "Italy");
+        Hobby hobby3 = new Hobby("trek", 5, "Cluj", "Romania");
+        Hobby hobby4 = new Hobby("trek", 5, "Trentino", "Italy");
         Hobby hobby5 = new Hobby("swim", 7, "Normandy", "France");
         Hobby hobby6 = new Hobby("swim", 7, "Devon", "Great Britan");
 
