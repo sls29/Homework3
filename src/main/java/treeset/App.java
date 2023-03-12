@@ -45,31 +45,37 @@ public class App {
         Hobby hobby5 = new Hobby("swim", 7, "Normandy", "France");
         Hobby hobby6 = new Hobby("swim", 7, "Devon", "Great Britan");
 
-        List<Hobby> Hobbies = new LinkedList<Hobby>();
+        List<Hobby> Hobbies1 = new LinkedList<Hobby>();
+        List<Hobby> Hobbies2 = new LinkedList<Hobby>();
+        List<Hobby> Hobbies3 = new LinkedList<Hobby>();
 
-        Hobbies.add(hobby1);
-        Hobbies.add(hobby2);
-        Hobbies.add(hobby3);
-        Hobbies.add(hobby4);
-        Hobbies.add(hobby5);
-        Hobbies.add(hobby6);
+        Hobbies1.add(hobby1);
+        Hobbies2.add(hobby2);
+        Hobbies1.add(hobby3);
+        Hobbies3.add(hobby4);
+        Hobbies2.add(hobby5);
+        Hobbies3.add(hobby6);
 
         System.out.println(" ");
         System.out.println(hobby2.Location());
         System.out.println(hobby4.Location());
         System.out.println(hobby6.Location());
 
-        Map<Person, Hobby> map = new HashMap<>();
+        Map<Person, List<Hobby>> map1 = new HashMap<>();
+        Map<Person, List<Hobby>> map2 = new HashMap<>();
+        Map<Person, List<Hobby>> map3 = new HashMap<>();
 
         System.out.println("");
-        System.out.println(map);
+        System.out.println(map1);
 
-        map.put(Person1, hobby1);
-        map.put(Person2, hobby3);
-        map.put(Person3, hobby5);
+        map1.put(Person1, Hobbies1);
+        map2.put(Person2, Hobbies2);
+        map3.put(Person3, Hobbies3);
 
         System.out.println("");
-        System.out.println(map);
+        System.out.println(map1);
+        System.out.println(map2);
+        System.out.println(map3);
 
     }
 }
