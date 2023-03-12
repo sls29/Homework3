@@ -15,7 +15,7 @@ public class App {
         System.out.println(Person2.equals(Person1));
         System.out.println(" ");
 
-        TreeSet<Person> Persons = new TreeSet<Person>(new NameComparator());
+        TreeSet<Person> Persons = new TreeSet<>(new NameComparator());
         //TreeSet<Person> Persons = new TreeSet<Person>(new AgeComparator());
 
         Persons.add(Person1);
@@ -27,15 +27,11 @@ public class App {
 
         Iterator<Person> iterator = Persons.iterator();
 
-        System.out.println("Treeset data");
+        System.out.println("TreeSet data");
         while(iterator.hasNext()) {
             final Person nextPerson = iterator.next();
             System.out.println(nextPerson.firstName + ", " + nextPerson.age);
         }
-
-        // for(Person person : Persons){
-        //    System.out.println(person);
-        // }
 
 
         Hobby hobby1 = new Hobby("ski", 3, "Brasov", "Romania");
@@ -43,12 +39,14 @@ public class App {
         Hobby hobby3 = new Hobby("trek", 5, "Cluj", "Romania");
         Hobby hobby4 = new Hobby("trek", 5, "Trentino", "Italy");
         Hobby hobby5 = new Hobby("swim", 7, "Normandy", "France");
-        Hobby hobby6 = new Hobby("swim", 7, "Devon", "Great Britan");
+        Hobby hobby6 = new Hobby("swim", 7, "Devon", "Great Britain");
 
-        List<Hobby> Hobbies1 = new LinkedList<Hobby>();
-        List<Hobby> Hobbies2 = new LinkedList<Hobby>();
-        List<Hobby> Hobbies3 = new LinkedList<Hobby>();
+        //Lists of hobbies for every person.
+        List<Hobby> Hobbies1 = new LinkedList<>();
+        List<Hobby> Hobbies2 = new LinkedList<>();
+        List<Hobby> Hobbies3 = new LinkedList<>();
 
+        //Hobbies added for every list.
         Hobbies1.add(hobby1);
         Hobbies2.add(hobby2);
         Hobbies1.add(hobby3);
@@ -65,14 +63,14 @@ public class App {
         Map<Person, List<Hobby>> map2 = new HashMap<>();
         Map<Person, List<Hobby>> map3 = new HashMap<>();
 
-        System.out.println("");
+        System.out.println(" ");
         System.out.println(map1);
 
         map1.put(Person1, Hobbies1);
         map2.put(Person2, Hobbies2);
         map3.put(Person3, Hobbies3);
 
-        System.out.println("");
+        System.out.println(" ");
         System.out.println(map1);
         System.out.println(map2);
         System.out.println(map3);
