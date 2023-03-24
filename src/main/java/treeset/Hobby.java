@@ -1,9 +1,6 @@
 
 package treeset;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Hobby {
     String hobbyName;
@@ -15,9 +12,4 @@ public class Hobby {
          this.frequency = frequency;
     }
 
-//a
-//    public String toString() { return "and he enjoy " + this.hobbyName + "ing" +" in " + super.toString(); }
-//    public String Location() {
-//      return "A good place to " + this.hobbyName + " is in " + super.toString();
-//    }
 }
