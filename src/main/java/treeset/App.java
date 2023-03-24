@@ -6,16 +6,16 @@ import java.util.*;
 public class App {
     public static void main(String[] args) {
 
-        Person Person1 = new Person( "Junior", 16);
-        Person Person2 = new Person( "Mister", 36);
-        Person Person3 = new Person( "Senior", 61);
+        Person person1 = new Person( "Junior", 16);
+        Person person2 = new Person( "Mister", 36);
+        Person person3 = new Person( "Senior", 61);
 
 
     TreeSet<Person> Persons = new TreeSet<>(new NameComparator());
 
-        Persons.add(Person1);
-        Persons.add(Person2);
-        Persons.add(Person3);
+        Persons.add(person1);
+        Persons.add(person2);
+        Persons.add(person3);
 
         System.out.println(Persons);
         System.out.println("------------------------------------------");
@@ -34,23 +34,23 @@ public class App {
         Hobby hobby3 = new Hobby("swim", 7);
 
 
-    List<Hobby> Pers1Hobbies = new LinkedList<>();
-    List<Hobby> Pers2Hobbies = new LinkedList<>();
-    List<Hobby> Pers3Hobbies = new LinkedList<>();
+    List<Hobby> Person1Hobbies = new LinkedList<>();
+    List<Hobby> Person2Hobbies = new LinkedList<>();
+    List<Hobby> Person3Hobbies = new LinkedList<>();
 
     List<HobbyAddress> Hobby1Address = new LinkedList<>();
     List<HobbyAddress> Hobby2Address = new LinkedList<>();
     List<HobbyAddress> Hobby3Address = new LinkedList<>();
 
 
-        Pers1Hobbies.add(hobby1);
-        Pers1Hobbies.add(hobby2);
+        Person1Hobbies.add(hobby1);
+        Person1Hobbies.add(hobby2);
 
-        Pers2Hobbies.add(hobby1);
-        Pers2Hobbies.add(hobby3);
+        Person2Hobbies.add(hobby1);
+        Person2Hobbies.add(hobby3);
 //a
-        Pers3Hobbies.add(hobby2);
-        Pers3Hobbies.add(hobby3);
+        Person3Hobbies.add(hobby2);
+        Person3Hobbies.add(hobby3);
 
         HobbyAddress Address1 = new HobbyAddress("Bavaria", "Germany");
         HobbyAddress Address2 = new HobbyAddress("Trentino", "Italy");
@@ -85,9 +85,9 @@ public class App {
     Map<Person, List<Hobby>> map1 = new HashMap<>();
 
 
-        map1.put(Person1, Pers1Hobbies);
-        map1.put(Person2, Pers2Hobbies);
-        map1.put(Person3, Pers3Hobbies);
+        map1.put(person1, Person1Hobbies);
+        map1.put(person2, Person2Hobbies);
+        map1.put(person3, Person3Hobbies);
 
     }
 }

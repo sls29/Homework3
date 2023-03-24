@@ -1,6 +1,5 @@
 package treeset;
 
-import java.util.TreeSet;
 
 public class Person {
     String firstName;
@@ -10,8 +9,6 @@ public class Person {
         this.firstName = firstName;
         this.age = age;
     }
-
-    TreeSet<Person> Persons = new TreeSet<>(new NameComparator());
 
     public String getName() {
         return this.firstName;
