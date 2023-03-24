@@ -74,11 +74,11 @@ public class App {
         Hobby3Address.add(Address8);
         Hobby3Address.add(Address9);
 
-    HashMap<Hobby, List<HobbyAddress>> hobby01 = new HashMap<>();
+    HashMap<Hobby, List<HobbyAddress>> hobby = new HashMap<>();
 
-        hobby01.put(hobby1, Hobby1Address);
-        hobby01.put(hobby2, Hobby2Address);
-        hobby01.put(hobby3, Hobby3Address);
+        hobby.put(hobby1, Hobby1Address);
+        hobby.put(hobby2, Hobby2Address);
+        hobby.put(hobby3, Hobby3Address);
 
 
 
