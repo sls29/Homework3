@@ -48,7 +48,7 @@ public class App {
 
         Pers2Hobbies.add(hobby1);
         Pers2Hobbies.add(hobby3);
-
+//a
         Pers3Hobbies.add(hobby2);
         Pers3Hobbies.add(hobby3);
 
