@@ -10,13 +10,8 @@ public class App {
         Person Person2 = new Person( "Mister", 36);
         Person Person3 = new Person( "Senior", 61);
 
-        System.out.println(Person2.firstName);
-        System.out.println(Person2.age);
-        System.out.println(Person2.equals(Person1));
-        System.out.println(" ");
 
-        TreeSet<Person> Persons = new TreeSet<>(new NameComparator());
-        //TreeSet<Person> Persons = new TreeSet<Person>(new AgeComparator());
+    TreeSet<Person> Persons = new TreeSet<>(new NameComparator());
 
         Persons.add(Person1);
         Persons.add(Person2);
@@ -34,46 +29,65 @@ public class App {
         }
 
 
-        Hobby hobby1 = new Hobby("ski", 3, "Brasov", "Romania");
-        Hobby hobby2 = new Hobby("ski", 3, "Bavaria", "Germany");
-        Hobby hobby3 = new Hobby("trek", 5, "Cluj", "Romania");
-        Hobby hobby4 = new Hobby("trek", 5, "Trentino", "Italy");
-        Hobby hobby5 = new Hobby("swim", 7, "Normandy", "France");
-        Hobby hobby6 = new Hobby("swim", 7, "Devon", "Great Britain");
+        Hobby hobby1 = new Hobby("ski", 3);
+        Hobby hobby2 = new Hobby("trek", 5);
+        Hobby hobby3 = new Hobby("swim", 7);
 
-        //Lists of hobbies for every person.
-        List<Hobby> Hobbies1 = new LinkedList<>();
-        List<Hobby> Hobbies2 = new LinkedList<>();
-        List<Hobby> Hobbies3 = new LinkedList<>();
 
-        //Hobbies added for every list.
-        Hobbies1.add(hobby1);
-        Hobbies2.add(hobby2);
-        Hobbies1.add(hobby3);
-        Hobbies3.add(hobby4);
-        Hobbies2.add(hobby5);
-        Hobbies3.add(hobby6);
+    List<Hobby> Pers1Hobbies = new LinkedList<>();
+    List<Hobby> Pers2Hobbies = new LinkedList<>();
+    List<Hobby> Pers3Hobbies = new LinkedList<>();
 
-        System.out.println(" ");
-        System.out.println(hobby2.Location());
-        System.out.println(hobby4.Location());
-        System.out.println(hobby6.Location());
+    List<HobbyAddress> Hobby1Address = new LinkedList<>();
+    List<HobbyAddress> Hobby2Address = new LinkedList<>();
+    List<HobbyAddress> Hobby3Address = new LinkedList<>();
 
-        Map<Person, List<Hobby>> map1 = new HashMap<>();
-        Map<Person, List<Hobby>> map2 = new HashMap<>();
-        Map<Person, List<Hobby>> map3 = new HashMap<>();
 
-        System.out.println(" ");
-        System.out.println(map1);
+        Pers1Hobbies.add(hobby1);
+        Pers1Hobbies.add(hobby2);
 
-        map1.put(Person1, Hobbies1);
-        map2.put(Person2, Hobbies2);
-        map3.put(Person3, Hobbies3);
+        Pers2Hobbies.add(hobby1);
+        Pers2Hobbies.add(hobby3);
 
-        System.out.println(" ");
-        System.out.println(map1);
-        System.out.println(map2);
-        System.out.println(map3);
+        Pers3Hobbies.add(hobby2);
+        Pers3Hobbies.add(hobby3);
+
+        HobbyAddress Address1 = new HobbyAddress("Bavaria", "Germany");
+        HobbyAddress Address2 = new HobbyAddress("Trentino", "Italy");
+        HobbyAddress Address3 = new HobbyAddress("JungFrau", "Swiss");
+        HobbyAddress Address4 = new HobbyAddress("Venetia", "Italy");
+        HobbyAddress Address5 = new HobbyAddress("Barcelona", "Spain");
+        HobbyAddress Address6 = new HobbyAddress("Creta", "Greece");
+        HobbyAddress Address7 = new HobbyAddress("Cluj", "Romania");
+        HobbyAddress Address8 = new HobbyAddress("Sierra Madre", "Spain");
+        HobbyAddress Address9 = new HobbyAddress("Acropolis", "Greece");
+
+        Hobby1Address.add(Address1);
+        Hobby1Address.add(Address2);
+        Hobby1Address.add(Address3);
+
+        Hobby2Address.add(Address4);
+        Hobby2Address.add(Address5);
+        Hobby2Address.add(Address6);
+
+        Hobby3Address.add(Address7);
+        Hobby3Address.add(Address8);
+        Hobby3Address.add(Address9);
+
+    HashMap<Hobby, List<HobbyAddress>> hobby01 = new HashMap<>();
+
+        hobby01.put(hobby1, Hobby1Address);
+        hobby01.put(hobby2, Hobby2Address);
+        hobby01.put(hobby3, Hobby3Address);
+
+
+
+    Map<Person, List<Hobby>> map1 = new HashMap<>();
+
+
+        map1.put(Person1, Pers1Hobbies);
+        map1.put(Person2, Pers2Hobbies);
+        map1.put(Person3, Pers3Hobbies);
 
     }
 }
