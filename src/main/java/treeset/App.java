@@ -11,13 +11,12 @@ public class App {
         Person person3 = new Person( "Senior", 61);
 
 
-    TreeSet<Person> Persons = new TreeSet<>(new NameComparator());
+    Set<Person> Persons = new TreeSet<>(new NameComparator());
 
         Persons.add(person1);
         Persons.add(person2);
         Persons.add(person3);
-
-        System.out.println(Persons);
+    //    System.out.println(Persons);
         System.out.println("------------------------------------------");
 
         Iterator<Person> iterator = Persons.iterator();
@@ -25,14 +24,13 @@ public class App {
         System.out.println("TreeSet data");
         while(iterator.hasNext()) {
             final Person nextPerson = iterator.next();
-            System.out.println(nextPerson.firstName + ", " + nextPerson.age);
+            System.out.println(nextPerson.firstName + " is " + nextPerson.age+ " years old.");
         }
 
 
-        Hobby hobby1 = new Hobby("ski", 3);
-        Hobby hobby2 = new Hobby("trek", 5);
-        Hobby hobby3 = new Hobby("swim", 7);
-
+    Hobby hobby1 = new Hobby("ski", 3);
+    Hobby hobby2 = new Hobby("trek", 5);
+    Hobby hobby3 = new Hobby("swim", 7);
 
     List<Hobby> Person1Hobbies = new LinkedList<>();
     List<Hobby> Person2Hobbies = new LinkedList<>();
@@ -42,13 +40,12 @@ public class App {
     List<HobbyAddress> Hobby2Address = new LinkedList<>();
     List<HobbyAddress> Hobby3Address = new LinkedList<>();
 
-
         Person1Hobbies.add(hobby1);
         Person1Hobbies.add(hobby2);
 
         Person2Hobbies.add(hobby1);
         Person2Hobbies.add(hobby3);
-//a
+
         Person3Hobbies.add(hobby2);
         Person3Hobbies.add(hobby3);
 
@@ -74,7 +71,7 @@ public class App {
         Hobby3Address.add(Address8);
         Hobby3Address.add(Address9);
 
-    HashMap<Hobby, List<HobbyAddress>> hobby = new HashMap<>();
+    Map<Hobby, List<HobbyAddress>> hobby = new HashMap<>();
 
         hobby.put(hobby1, Hobby1Address);
         hobby.put(hobby2, Hobby2Address);
@@ -88,6 +85,13 @@ public class App {
         map1.put(person1, Person1Hobbies);
         map1.put(person2, Person2Hobbies);
         map1.put(person3, Person3Hobbies);
+
+
+
+    System.out.println(map1.get(person1));
+
+
+    System.out.println(hobby.get(hobby1));
 
     }
 }

@@ -12,4 +12,8 @@ public class Hobby {
          this.frequency = frequency;
     }
 
+    @Override
+    public String toString() {
+        return hobbyName;
+    }
 }

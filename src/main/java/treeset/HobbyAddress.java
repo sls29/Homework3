@@ -10,6 +10,6 @@ public class HobbyAddress {
     }
 
     public String toString() {
-        return  this.county + ", " + this.country;
+        return  this.county + " - " + this.country;
     }
 }
