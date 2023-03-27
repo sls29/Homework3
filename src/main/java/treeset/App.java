@@ -24,7 +24,7 @@ public class App {
         System.out.println("TreeSet data");
         while(iterator.hasNext()) {
             final Person nextPerson = iterator.next();
-            System.out.println(nextPerson.firstName + " is " + nextPerson.age+ " years old.");
+            System.out.println(nextPerson.toString());
         }
 
 
