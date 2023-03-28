@@ -27,37 +27,39 @@ public class App {
             System.out.println(nextPerson.toString());
         }
 
-
     Hobby hobby1 = new Hobby("ski", 3);
     Hobby hobby2 = new Hobby("trek", 5);
     Hobby hobby3 = new Hobby("swim", 7);
+    Hobby hobby4 = new Hobby("ski", 6);
+    Hobby hobby5 = new Hobby("trek", 8);
+    Hobby hobby6 = new Hobby("swim", 4);
 
     List<Hobby> Person1Hobbies = new LinkedList<>();
     List<Hobby> Person2Hobbies = new LinkedList<>();
     List<Hobby> Person3Hobbies = new LinkedList<>();
 
-    List<HobbyAddress> Hobby1Address = new LinkedList<>();
-    List<HobbyAddress> Hobby2Address = new LinkedList<>();
-    List<HobbyAddress> Hobby3Address = new LinkedList<>();
-
         Person1Hobbies.add(hobby1);
-        Person1Hobbies.add(hobby2);
+        Person1Hobbies.add(hobby5);
 
-        Person2Hobbies.add(hobby1);
-        Person2Hobbies.add(hobby3);
+        Person2Hobbies.add(hobby2);
+        Person2Hobbies.add(hobby6);
 
-        Person3Hobbies.add(hobby2);
         Person3Hobbies.add(hobby3);
+        Person3Hobbies.add(hobby4);
 
         HobbyAddress Address1 = new HobbyAddress("Bavaria", "Germany");
         HobbyAddress Address2 = new HobbyAddress("Trentino", "Italy");
         HobbyAddress Address3 = new HobbyAddress("JungFrau", "Swiss");
         HobbyAddress Address4 = new HobbyAddress("Venetia", "Italy");
         HobbyAddress Address5 = new HobbyAddress("Barcelona", "Spain");
-        HobbyAddress Address6 = new HobbyAddress("Creta", "Greece");
+        HobbyAddress Address6 = new HobbyAddress("Crete", "Greece");
         HobbyAddress Address7 = new HobbyAddress("Cluj", "Romania");
         HobbyAddress Address8 = new HobbyAddress("Sierra Madre", "Spain");
         HobbyAddress Address9 = new HobbyAddress("Acropolis", "Greece");
+
+    List<HobbyAddress> Hobby1Address = new LinkedList<>();
+    List<HobbyAddress> Hobby2Address = new LinkedList<>();
+    List<HobbyAddress> Hobby3Address = new LinkedList<>();
 
         Hobby1Address.add(Address1);
         Hobby1Address.add(Address2);
@@ -77,10 +79,7 @@ public class App {
         hobby.put(hobby2, Hobby2Address);
         hobby.put(hobby3, Hobby3Address);
 
-
-
     Map<Person, List<Hobby>> map1 = new HashMap<>();
-
 
         map1.put(person1, Person1Hobbies);
         map1.put(person2, Person2Hobbies);

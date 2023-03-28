@@ -13,12 +13,6 @@ public class Person {
         this.age = age;
     }
 
-    Set<Person> Persons = new TreeSet<>(new NameComparator());
-
-    private void personAdd(String firstName, int age){
-        Persons.add(new Person(firstName, age));
-        System.out.println("Person added");
-    }
     public String getName() {
         return this.firstName;
     }
