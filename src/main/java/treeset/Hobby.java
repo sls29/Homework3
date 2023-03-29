@@ -4,16 +4,14 @@ package treeset;
 
 public class Hobby {
     String hobbyName;
-    int frequency;
 
-     public Hobby(String hobbyName, int frequency) {
+     public Hobby(String hobbyName) {
 
          this.hobbyName = hobbyName;
-         this.frequency = frequency;
     }
 
     @Override
     public String toString() {
-        return hobbyName;
+        return hobbyName ;
     }
 }

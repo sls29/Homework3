@@ -1,8 +1,8 @@
 package treeset;
 
-public class NameComparator implements java.util.Comparator<Person> {
-    public int compare(Person p1, Person p2){
+public class NameComparator implements java.util.Comparator<Hobby> {
+    public int compare(Hobby p1, Hobby p2){
 
-        return (p1.firstName).compareTo(p2.firstName);
+        return (p1.hobbyName).compareTo(p2.hobbyName);
     }
 }
