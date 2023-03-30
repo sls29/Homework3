@@ -6,7 +6,7 @@ import java.util.*;
 public class App {
     public static void main(String[] args) {
 
-        Aplic aplic = new Aplic();
+    Aplic aplic = new Aplic();
 
     aplic.addNewPerson(new Person( "Junior", 16));
     aplic.addNewPerson(new Person( "Mister", 36));
@@ -27,11 +27,11 @@ public class App {
     aplic.listHobbies();
 
     aplic.setPersonHobbies("Junior", "ski");
-        aplic.setPersonHobbies("Junior", "trek");
-        aplic.setPersonHobbies("Mister", "trek");
-        aplic.setPersonHobbies("Mister", "swim");
-        aplic.setPersonHobbies("Senior", "swim");
-        aplic.setPersonHobbies("Senior", "ski");
+    aplic.setPersonHobbies("Junior", "trek");
+    aplic.setPersonHobbies("Mister", "trek");
+    aplic.setPersonHobbies("Mister", "swim");
+    aplic.setPersonHobbies("Senior", "swim");
+    aplic.setPersonHobbies("Senior", "ski");
 
     aplic.getPersonHobbies("Mister");
 
