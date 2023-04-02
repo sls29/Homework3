@@ -1,5 +1,9 @@
 package treeset;
 
+
+import java.util.Set;
+import java.util.TreeSet;
+
 public class Person {
     String firstName;
     int age;
@@ -8,7 +12,6 @@ public class Person {
         this.firstName = firstName;
         this.age = age;
     }
-
     public String getName() {
         return this.firstName;
     }
@@ -17,7 +20,7 @@ public class Person {
         return this.age;
     }
     public String toString(){
-        return " " + this.firstName + " is " + this.age + " old ";
+        return " " + this.firstName + " is " + this.age + " years old ";
     }
 
 }
